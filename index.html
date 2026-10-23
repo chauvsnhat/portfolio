@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio cá nhân của Lê Nguyễn Minh Nhật - Sinh viên Kỹ thuật Phần mềm (HCMUS). Chuyên môn: Backend Development, Java Spring Boot, Microservices, Scalable System Design.">
+  <meta name="keywords" content="Lê Nguyễn Minh Nhật, Software Engineer, Backend Developer, Java Spring Boot, Microservices, HCMUS, Portfolio">
+  <meta name="author" content="Lê Nguyễn Minh Nhật">
+  <title>Lê Nguyễn Minh Nhật | Backend & Software Engineer Portfolio</title>
+
+  <!-- Open Graph / Meta sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lê Nguyễn Minh Nhật | Backend & Software Engineer Portfolio">
+  <meta property="og:description" content="Sinh viên Kỹ thuật Phần mềm ĐH Khoa học Tự nhiên (VNU-HCM). GPA 9.0/10, IELTS 7.0. Chuyên môn: Java Spring Boot, Microservices và Distributed Systems.">
+  <meta property="og:image" content="assets/images/avatar.jpg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-grid-overlay"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" id="brand-logo">
+        <span class="brand-code">&lt;</span>
+        <span class="brand-name">MinhNhat.dev</span>
+        <span class="brand-code">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link" id="nav-about">Về tôi</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link" id="nav-skills">Kỹ năng</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link" id="nav-projects">Dự án</a></li>
+          <li class="nav-item"><a href="#journey" class="nav-link" id="nav-journey">Lộ trình</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" id="nav-contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Chuyển đổi giao diện Sáng/Tối" title="Đổi giao diện">
+          <i data-lucide="sun" class="icon-sun"></i>
+          <i data-lucide="moon" class="icon-moon"></i>
+        </button>
+
+        <!-- CV Action Button -->
+        <button class="btn btn-secondary btn-sm" id="btn-quick-cv">
+          <i data-lucide="file-text"></i>
+          <span>Xem CV</span>
+        </button>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Mở menu điều hướng">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section hero" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Status Badge -->
+          <div class="status-badge" id="intern-status-badge">
+            <span class="status-dot pulse"></span>
+            <span>Sinh viên năm cuối Kỹ thuật Phần mềm (HCMUS) | GPA 9.0/10 | IELTS 7.0</span>
+          </div>
+
+          <h1 class="hero-title">
+            Xin chào, tôi là <br>
+            <span class="highlight-text gradient-text">Lê Nguyễn Minh Nhật</span>
+          </h1>
+
+          <div class="hero-typing">
+            <span class="typing-prefix">Chuyên môn: </span>
+            <span class="typed-text" id="typed-role">Backend Developer (Spring Boot)</span>
+            <span class="cursor">&nbsp;</span>
+          </div>
+
+          <p class="hero-description">
+            Sinh viên năm cuối ngành Kỹ thuật Phần mềm tại Trường ĐH Khoa học Tự nhiên (ĐHQG TP.HCM) với GPA 9.0/10 (Xuất sắc) và IELTS 7.0. Định hướng chuyên sâu vào <strong>Backend Development</strong>, <strong>Java Spring Boot</strong>, <strong>Microservices</strong> và <strong>thiết kế hệ thống chịu tải cao (Scalable Systems)</strong>.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary" id="btn-view-projects">
+              <i data-lucide="folder-git-2"></i>
+              <span>Xem các dự án thực tế</span>
+            </a>
+            <a href="#contact" class="btn btn-outline" id="btn-contact-me">
+              <i data-lucide="send"></i>
+              <span>Liên hệ hợp tác</span>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <span class="social-label">Kết nối với tôi:</span>
+            <div class="social-icons">
+              <a href="tel:+84336700112" class="social-link" title="Gọi điện (+84 336 700 112)">
+                <i data-lucide="phone"></i>
+              </a>
+              <a href="mailto:lnmnhat1510@gmail.com" class="social-link" title="Gửi email (lnmnhat1510@gmail.com)">
+                <i data-lucide="mail"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+                <i data-lucide="linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Avatar & Visual Elements -->
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-glow-ring"></div>
+            <div class="avatar-box">
+              <img src="assets/images/avatar.jpg" alt="Chân dung kỹ sư phần mềm Lê Nguyễn Minh Nhật" class="avatar-img" id="avatar-image">
+            </div>
+
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge badge-top-left float-anim-1">
+              <i data-lucide="code"></i>
+              <span>Java Spring Boot</span>
+            </div>
+            <div class="floating-badge badge-top-right float-anim-2">
+              <i data-lucide="server"></i>
+              <span>Microservices & Redis</span>
+            </div>
+            <div class="floating-badge badge-bottom-right float-anim-3">
+              <i data-lucide="cpu"></i>
+              <span>RabbitMQ & Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY STATS SECTION -->
+    <section class="section stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon-wrapper">
+              <i data-lucide="award"></i>
+            </div>
+            <div class="stat-info">
+              <h3 class="stat-number" data-target="9.0" data-format="decimal1">9.0</h3>
+              <p class="stat-label">Điểm GPA Tích lũy (HCMUS - Xuất sắc)</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon-wrapper">
+              <i data-lucide="languages"></i>
+            </div>
+            <div class="stat-info">
+              <h3 class="stat-number" data-target="7.0" data-format="decimal1">7.0</h3>
+              <p class="stat-label">IELTS Academic (Tiếng Anh)</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon-wrapper">
+              <i data-lucide="graduation-cap"></i>
+            </div>
+            <div class="stat-info">
+              <h3 class="stat-number" data-target="1" data-format="scholarship">HK1</h3>
+              <p class="stat-label">Học bổng KKHT (2024 - 2025)</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon-wrapper">
+              <i data-lucide="folder-check"></i>
+            </div>
+            <div class="stat-info">
+              <h3 class="stat-number" data-target="4">4+</h3>
+              <p class="stat-label">Dự án Thực tế & Microservices</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">TỔNG QUAN NĂNG LỰC</span>
+          <h2 class="section-title">Backend Engineer | Java Spring Boot & Scalable Systems</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card intro-card">
+            <div class="card-badge"><i data-lucide="user-check"></i> Giới thiệu bản thân</div>
+            <h3>Khát khao xây dựng hệ thống chịu tải cao & Giải quyết bài toán thực tế</h3>
+            <p>
+              Hiện là sinh viên năm cuối chuyên ngành <strong>Kỹ thuật Phần mềm tại Trường Đại học Khoa học Tự nhiên - ĐHQG TP.HCM (HCMUS)</strong> với điểm GPA tích lũy <strong>9.0 / 10</strong> (Xếp loại Xuất sắc) và chứng chỉ tiếng Anh <strong>IELTS 7.0</strong>.
+            </p>
+            <p>
+              <strong>Mục tiêu nghề nghiệp:</strong> Tập trung chuyên sâu vào Backend Development, làm chủ Java Spring Boot, kiến trúc Microservices, RESTful APIs, cơ sở dữ liệu quan hệ (SQL) và các giải pháp chống tranh chấp dữ liệu đồng thời (Concurrency, Distributed Locks). Mong muốn ứng dụng kiến thức vững chắc để phát triển các hệ thống phần mềm quy mô lớn, vận hành ổn định và đạt hiệu năng cao.
+            </p>
+          </div>
+
+          <div class="about-card values-card">
+            <div class="card-badge"><i data-lucide="sparkles"></i> Giá trị cốt lõi & Thế mạnh</div>
+            <ul class="values-list">
+              <li>
+                <div class="value-icon"><i data-lucide="check-circle-2"></i></div>
+                <div>
+                  <strong>Kiến trúc hệ thống & Clean Code:</strong> Tuân thủ kiến trúc phân tầng (Controller-Service-Repository), SOLID principles, Event-Driven Messaging qua RabbitMQ/BullMQ và xử lý đồng thời bằng Redis Distributed Locks.
+                </div>
+              </li>
+              <li>
+                <div class="value-icon"><i data-lucide="check-circle-2"></i></div>
+                <div>
+                  <strong>Nền tảng học thuật xuất sắc & IELTS 7.0:</strong> GPA 9.0/10, đạt học bổng Khuyến khích học tập HCMUS, năng lực tiếng Anh học thuật xuất sắc phục vụ nghiên cứu tài liệu kỹ thuật chuyên sâu và giao tiếp môi trường quốc tế.
+                </div>
+              </li>
+              <li>
+                <div class="value-icon"><i data-lucide="check-circle-2"></i></div>
+                <div>
+                  <strong>Tư duy giải quyết bài toán cao tải (High Concurrency):</strong> Không chỉ viết mã chạy được, mà luôn chú trọng tối ưu thời gian phản hồi, ngăn chặn overselling/race condition, và xây dựng hệ thống tự phục hồi với Circuit Breaker.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">NĂNG LỰC CHUYÊN MÔN</span>
+          <h2 class="section-title">Kỹ năng kỹ thuật & Công cụ</h2>
+          <p class="section-desc">Bộ công cụ và công nghệ chuyên sâu được tích lũy qua các đồ án thực tế và quá trình học tập tại HCMUS.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-container">
+          <!-- Category 1: Backend & Microservices -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-purple">
+                <i data-lucide="server"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Backend & Kiến trúc Hệ thống</h3>
+                <span class="category-meta">Spring Boot, Microservices & RESTful API</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> Java Spring Boot</span>
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> Spring Security & JWT</span>
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> Microservices Architecture</span>
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> Node.js & TypeScript</span>
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> Clean Architecture (Controller-Service-Repo)</span>
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> RESTful API Design</span>
+              <span class="skill-tag moderate-competence"><i data-lucide="sparkle"></i> Circuit Breaker & Rate Limiting</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Data, Caching & Messaging -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-cyan">
+                <i data-lucide="database"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Cơ sở dữ liệu & Message Queue</h3>
+                <span class="category-meta">MySQL, Redis, RabbitMQ & BullMQ</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> MySQL / SQL (Oracle)</span>
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> Redis (Distributed Caching & Locks)</span>
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> RabbitMQ & BullMQ (Event Messaging)</span>
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> Database Indexing & Optimization</span>
+              <span class="skill-tag moderate-competence"><i data-lucide="sparkle"></i> PostgreSQL / MongoDB</span>
+            </div>
+          </div>
+
+          <!-- Category 3: DevOps, Tools & Frontend -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-emerald">
+                <i data-lucide="wrench"></i>
+              </div>
+              <div>
+                <h3 class="category-title">DevOps, Công cụ & Frontend/Mobile</h3>
+                <span class="category-meta">Docker, CI/CD, React & Jetpack Compose</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> Docker & Containerization</span>
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> Git / GitHub (PRs, Branching) & SVN</span>
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> Postman (API Testing)</span>
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> Cloudinary Media API</span>
+              <span class="skill-tag moderate-competence"><i data-lucide="sparkle"></i> React.js (Frontend)</span>
+              <span class="skill-tag moderate-competence"><i data-lucide="sparkle"></i> Kotlin & Jetpack Compose (Android)</span>
+              <span class="skill-tag moderate-competence"><i data-lucide="sparkle"></i> Kubernetes, Jenkins, CI/CD, ArgoCD</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Soft Skills & Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-amber">
+                <i data-lucide="award"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Ngoại ngữ & Kỹ năng làm việc</h3>
+                <span class="category-meta">IELTS 7.0 & Tư duy giải quyết vấn đề</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> Tiếng Anh: IELTS 7.0 (Đọc tài liệu, giao tiếp)</span>
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> Tư duy Giải quyết vấn đề (Problem Solving)</span>
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> Làm việc nhóm theo Agile/Scrum</span>
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> Kỹ năng Viết tài liệu kỹ thuật (Technical Writing)</span>
+              <span class="skill-tag high-competence"><i data-lucide="check"></i> Thuyết trình kỹ thuật (Technical Presentation)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-legend">
+          <span class="legend-item"><span class="badge-dot badge-dot-green"></span> Đã tự tin áp dụng vào sản phẩm</span>
+          <span class="legend-item"><span class="badge-dot badge-dot-blue"></span> Đang học hỏi & làm quen đồ án</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">SẢN PHẨM NỔI BẬT</span>
+          <h2 class="section-title">Các dự án đã xây dựng</h2>
+          <p class="section-desc">Mỗi dự án đều kèm mã nguồn mở GitHub, link bản chạy thật (Live Demo) và phân tích giải pháp kỹ thuật.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters" id="project-filters">
+          <button class="filter-btn active" data-filter="all">Tất cả (4)</button>
+          <button class="filter-btn" data-filter="backend">Backend & Microservices</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack Web</button>
+          <button class="filter-btn" data-filter="mobile">Mobile App</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- PROJECT 1: SMART RESTAURANT -->
+          <article class="project-card" data-category="fullstack backend" data-project-id="p1">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-restaurant.jpg" alt="Smart Restaurant QR-based Ordering System" class="project-img" loading="lazy">
+              <div class="project-badge"><i data-lucide="star"></i> Đồ án thực tế tiêu biểu</div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary view-details-btn" data-project="p1">
+                  <i data-lucide="eye"></i> Case Study
+                </button>
+                <button class="btn btn-sm btn-secondary watch-video-btn" data-project="p1">
+                  <i data-lucide="play-circle"></i> Video Demo
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">React / Next.js</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Socket.IO</span>
+                <span class="tag">Payment Gateway</span>
+              </div>
+              <h3 class="project-title">Smart Restaurant - Đặt món QR & Màn hình Bếp KDS</h3>
+              <p class="project-summary">
+                Hệ thống gọi món tại bàn thông minh qua mã QR. Khách hàng duyệt menu, tùy biến món và thanh toán sau bữa ăn (ZaloPay, MoMo, VNPay). Tự động hợp nhất đơn theo phiên bàn và điều phối bếp KDS thời gian thực qua Socket.IO.
+              </p>
+              <div class="project-highlights">
+                <div class="highlight-item"><i data-lucide="zap"></i> Luồng khép kín: Khách quét QR → Bồi bàn duyệt → Bếp KDS Real-time</div>
+                <div class="highlight-item"><i data-lucide="shield-check"></i> Quản lý phiên bàn (Single Table Session) & Tích hợp cổng thanh toán</div>
+              </div>
+              <div class="project-footer">
+                <div class="project-links">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-btn" title="Xem GitHub Repository">
+                    <i data-lucide="github"></i> Code
+                  </a>
+                  <button class="link-btn video-link-btn watch-video-btn" data-project="p1" title="Xem Video Demo (Unlisted)">
+                    <i data-lucide="play-circle"></i> Video Demo
+                  </button>
+                  <a href="https://www.youtube.com/watch?v=kcsuZZ6qF3s" target="_blank" rel="noopener noreferrer" class="link-btn live-link" title="Xem Demo trực tiếp">
+                    <i data-lucide="external-link"></i> Live Demo
+                  </a>
+                </div>
+                <button class="details-text-btn view-details-btn" data-project="p1">
+                  Chi tiết <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: TICKETBOX MOCKING -->
+          <article class="project-card" data-category="backend" data-project-id="p2">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-ticketbox.jpg" alt="Ticketbox Mocking Microservices Platform" class="project-img" loading="lazy">
+              <div class="project-badge"><i data-lucide="layers"></i> Microservices (Team 4)</div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary view-details-btn" data-project="p2">
+                  <i data-lucide="eye"></i> Xem Case Study
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Microservices</span>
+                <span class="tag">Redis Locks</span>
+                <span class="tag">RabbitMQ</span>
+              </div>
+              <h3 class="project-title">Ticketbox Mocking - Nền tảng Đặt vé Sự kiện Phân tán</h3>
+              <p class="project-summary">
+                Hệ thống bán vé sự kiện phân tán mô phỏng Ticketbox với kiến trúc Microservices (Booking, Payment, Ticket, AI) qua API Gateway. Xử lý bài toán cao tải và tranh chấp ghế bằng Redis distributed locks và hàng đợi RabbitMQ/BullMQ.
+              </p>
+              <div class="project-highlights">
+                <div class="highlight-item"><i data-lucide="zap"></i> Redis Distributed Lock chống ticket contention & overselling tuyệt đối</div>
+                <div class="highlight-item"><i data-lucide="shield-check"></i> Circuit Breaker, Rate Limiting & Check-in QR offline tự động đồng bộ</div>
+              </div>
+              <div class="project-footer">
+                <div class="project-links">
+                  <span class="link-btn link-btn-muted" title="Mã nguồn dự án nội bộ">
+                    <i data-lucide="lock"></i> Mã nguồn: Nội bộ
+                  </span>
+                </div>
+                <button class="details-text-btn view-details-btn" data-project="p2">
+                  Chi tiết <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: BOOKING PLATFORM -->
+          <article class="project-card" data-category="fullstack backend" data-project-id="p3">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-booking.jpg" alt="Booking Platform Hotel Reservation" class="project-img" loading="lazy">
+              <div class="project-badge"><i data-lucide="code"></i> Java Spring Boot (Cá nhân)</div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary view-details-btn" data-project="p3">
+                  <i data-lucide="eye"></i> Xem Case Study
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Java Spring Boot</span>
+                <span class="tag">React</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Spring Security</span>
+                <span class="tag">Cloudinary</span>
+              </div>
+              <h3 class="project-title">Booking Platform - Đặt phòng Khách sạn Chuẩn Phân tầng</h3>
+              <p class="project-summary">
+                Nền tảng đặt phòng trực tuyến full-stack xây dựng theo chuẩn kiến trúc phân tầng (Controller-Service-Repository). Quản lý tìm kiếm phòng, kiểm tra lịch trống và phân quyền chặt chẽ với Spring Security và JWT.
+              </p>
+              <div class="project-highlights">
+                <div class="highlight-item"><i data-lucide="zap"></i> Kiến trúc Layered Clean Code với Java Spring Boot & JPA/Hibernate</div>
+                <div class="highlight-item"><i data-lucide="shield-check"></i> Phân quyền Admin/Customer & Upload tối ưu ảnh qua Cloudinary</div>
+              </div>
+              <div class="project-footer">
+                <div class="project-links">
+                  <span class="link-btn link-btn-muted" title="Mã nguồn dự án đang được chuẩn bị">
+                    <i data-lucide="lock"></i> Mã nguồn: Đang cập nhật
+                  </span>
+                </div>
+                <button class="details-text-btn view-details-btn" data-project="p3">
+                  Chi tiết <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: DORMDELI -->
+          <article class="project-card" data-category="mobile" data-project-id="p4">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-dormdeli.jpg" alt="DormDeli Mobile Food Delivery App" class="project-img" loading="lazy">
+              <div class="project-badge"><i data-lucide="smartphone"></i> Kotlin Android (Team 5)</div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary view-details-btn" data-project="p4">
+                  <i data-lucide="eye"></i> Xem Case Study
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Kotlin</span>
+                <span class="tag">Jetpack Compose</span>
+                <span class="tag">Android UI</span>
+                <span class="tag">Student ID Auth</span>
+                <span class="tag">Cloudinary</span>
+              </div>
+              <h3 class="project-title">DormDeli - Ứng dụng Giao đồ ăn Ký túc xá Sinh viên</h3>
+              <p class="project-summary">
+                Ứng dụng Android đặt đồ ăn nội khu ký túc xá phát triển với Kotlin và Jetpack Compose. Tích hợp xác thực mã số sinh viên bảo mật và module quản lý gian hàng (Vendor management) theo dõi đơn hàng trực quan.
+              </p>
+              <div class="project-highlights">
+                <div class="highlight-item"><i data-lucide="zap"></i> Declarative UI mượt mà với Jetpack Compose & Clean Android</div>
+                <div class="highlight-item"><i data-lucide="shield-check"></i> Xác thực sinh viên an toàn & Quản lý thực đơn đối tác linh hoạt</div>
+              </div>
+              <div class="project-footer">
+                <div class="project-links">
+                  <span class="link-btn link-btn-muted" title="Mã nguồn dự án nội bộ">
+                    <i data-lucide="lock"></i> Mã nguồn: Nội bộ
+                  </span>
+                </div>
+                <button class="details-text-btn view-details-btn" data-project="p4">
+                  Chi tiết <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY / EDUCATION & ACTIVITIES TIMELINE -->
+    <section class="section journey-section" id="journey">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">HÀNH TRÌNH PHÁT TRIỂN</span>
+          <h2 class="section-title">Học vấn & Hoạt động rèn luyện</h2>
+          <p class="section-desc">Quá trình tích lũy kiến thức nền tảng vững chắc và kinh nghiệm phát triển phần mềm thực chiến.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot current"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-period">2023 - Dự kiến tốt nghiệp 07/2027</span>
+                <span class="badge-role">Cử nhân Đại học</span>
+              </div>
+              <h3 class="timeline-title">Cử nhân Kỹ thuật Phần mềm (Bachelor of Software Engineering)</h3>
+              <h4 class="timeline-organization">Trường Đại học Khoa học Tự nhiên - ĐHQG TP.HCM (HCMUS)</h4>
+              <p class="timeline-text">
+                - Điểm trung bình tích lũy (Cumulative GPA): <strong>9.0 / 10</strong> (Outstanding Academic Performance - Xếp loại Xuất sắc).<br>
+                - <strong>Học bổng:</strong> School Scholarship – Học kỳ 1, Năm học 2024–2025.<br>
+                - Định hướng chuyên sâu: Backend Development, Java Spring Boot, Microservices, RESTful APIs, Clean Architecture, Cơ sở dữ liệu SQL.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-period">06/2026 - 08/2026</span>
+                <span class="badge-role">Dự án Chuyên sâu</span>
+              </div>
+              <h3 class="timeline-title">Phát triển Nền tảng Phân tán Ticketbox & Hệ thống Booking</h3>
+              <h4 class="timeline-organization">Dự án Thực tế & Kiến trúc Hệ thống chịu tải</h4>
+              <p class="timeline-text">
+                - <strong>Ticketbox Mocking:</strong> Thiết kế kiến trúc Microservices phân tán (Booking, Payment, Ticket, AI), áp dụng Redis Distributed Locks và hàng đợi RabbitMQ/BullMQ chống tranh chấp vé/overselling.<br>
+                - <strong>Booking Platform:</strong> Xây dựng hệ thống đặt phòng theo kiến trúc phân tầng chuẩn mực (Controller-Service-Repository) với Java Spring Boot, Spring Security và JWT.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-period">01/2026</span>
+                <span class="badge-role">Đồ án Nhóm (5 thành viên)</span>
+              </div>
+              <h3 class="timeline-title">Ứng dụng Di động Nội khu DormDeli</h3>
+              <h4 class="timeline-organization">Đồ án Kỹ thuật Phần mềm Di động</h4>
+              <p class="timeline-text">
+                - Phát triển ứng dụng đặt đồ ăn cho sinh viên ký túc xá bằng ngôn ngữ Kotlin và Jetpack Compose hiện đại.<br>
+                - Phụ trách module xác thực mã số sinh viên bảo mật và tính năng quản lý danh mục gian hàng (Vendor management).
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-period">2024 - 2025</span>
+                <span class="badge-role">Chứng chỉ Ngoại ngữ</span>
+              </div>
+              <h3 class="timeline-title">Chứng chỉ Tiếng Anh Quốc tế IELTS Academic</h3>
+              <h4 class="timeline-organization">IDP / British Council</h4>
+              <p class="timeline-text">
+                - <strong>Điểm IELTS: 7.0</strong> (Khả năng đọc hiểu tài liệu kỹ thuật chuyên sâu quốc tế mượt mà, giao tiếp và viết tài liệu kỹ thuật chuẩn xác).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">SẴN SÀNG TRAO ĐỔI</span>
+          <h2 class="section-title">Thông tin liên hệ</h2>
+          <p class="section-desc">Tôi đang sẵn sàng cho các cơ hội Thực tập sinh / Kỹ sư Backend. Rất mong có cơ hội được trao đổi cùng Quý doanh nghiệp!</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-panel">
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="mail"></i></div>
+              <div class="info-body">
+                <span class="info-title">Email</span>
+                <a href="mailto:lnmnhat1510@gmail.com" class="info-value">lnmnhat1510@gmail.com</a>
+                <span class="info-hint">Phản hồi nhanh chóng qua email</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="phone"></i></div>
+              <div class="info-body">
+                <span class="info-title">Số điện thoại / Zalo</span>
+                <a href="tel:+84336700112" class="info-value">+84 336 700 112 (0336 700 112)</a>
+                <span class="info-hint">Sẵn sàng nhận cuộc gọi trao đổi</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="map-pin"></i></div>
+              <div class="info-body">
+                <span class="info-title">Địa điểm sinh sống</span>
+                <span class="info-value">TP. Hồ Chí Minh (Ho Chi Minh City)</span>
+                <span class="info-hint">Sẵn sàng làm việc Onsite, Hybrid hoặc Remote</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon"><i data-lucide="calendar"></i></div>
+              <div class="info-body">
+                <span class="info-title">Tình trạng ứng tuyển</span>
+                <span class="info-value">Sẵn sàng bắt đầu ngay</span>
+                <span class="info-hint">Vị trí: Backend Engineer / Software Engineer Intern</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-panel">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="sender-name">Họ và tên của bạn / Nhà tuyển dụng <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i data-lucide="user" class="input-icon"></i>
+                  <input type="text" id="sender-name" name="name" placeholder="VD: Anh Tuấn (Tech Lead / HR)" required>
+                </div>
+                <span class="field-error" id="error-name"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-email">Email nhận phản hồi <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i data-lucide="at-sign" class="input-icon"></i>
+                  <input type="email" id="sender-email" name="email" placeholder="VD: hr@company.com" required>
+                </div>
+                <span class="field-error" id="error-email"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-subject">Tiêu đề trao đổi <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i data-lucide="briefcase" class="input-icon"></i>
+                  <input type="text" id="sender-subject" name="subject" placeholder="VD: Trao đổi cơ hội Kỹ sư Backend Spring Boot" required>
+                </div>
+                <span class="field-error" id="error-subject"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message">Nội dung tin nhắn <span class="required">*</span></label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i data-lucide="message-square" class="input-icon textarea-icon"></i>
+                  <textarea id="sender-message" name="message" rows="4" placeholder="Nhập nội dung trao đổi hoặc mô tả công việc..." required></textarea>
+                </div>
+                <span class="field-error" id="error-message"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="btn-submit-contact">
+                <i data-lucide="send"></i>
+                <span>Gửi tin nhắn</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo">
+          <span class="brand-code">&lt;</span>
+          <span class="brand-name">MinhNhat.dev</span>
+          <span class="brand-code">/&gt;</span>
+        </a>
+        <p class="footer-desc">Portfolio cá nhân của Lê Nguyễn Minh Nhật - Sinh viên Kỹ thuật Phần mềm (HCMUS).</p>
+      </div>
+      <div class="footer-center">
+        <p>© 2025 Lê Nguyễn Minh Nhật. Thiết kế tối ưu cho ứng tuyển Kỹ sư Backend & Software Engineer.</p>
+      </div>
+      <div class="footer-right">
+        <button class="back-to-top" id="back-to-top" aria-label="Lên đầu trang" title="Về đầu trang">
+          <i data-lucide="arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: PROJECT CASE STUDY (Recruiters Love This!) -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modal-close-btn" aria-label="Đóng cửa sổ">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-body" id="modal-project-content">
+        <!-- Content will be injected dynamically by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: QUICK CV PREVIEW & DOWNLOAD -->
+  <div class="modal-overlay" id="cv-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog cv-dialog">
+      <button class="modal-close" id="cv-modal-close" aria-label="Đóng cửa sổ">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="cv-preview-container">
+        <div class="cv-preview-header">
+          <div class="cv-header-info">
+            <h3 class="cv-name">Le Nguyen Minh Nhat (Lê Nguyễn Minh Nhật)</h3>
+            <p class="cv-title">Backend Developer | Software Engineering Student (HCMUS)</p>
+          </div>
+          <div class="cv-download-actions">
+            <button class="btn btn-primary btn-sm" id="btn-print-cv" onclick="window.print()">
+              <i data-lucide="printer"></i> In / Xuất PDF
+            </button>
+          </div>
+        </div>
+
+        <div class="cv-preview-body">
+          <div class="cv-section">
+            <h4 class="cv-sec-title"><i data-lucide="user"></i> MỤC TIÊU NGHỀ NGHIỆP (CAREER OBJECTIVE)</h4>
+            <p>Final-year Software Engineering student specializing in <strong>Backend Development</strong>, <strong>Java Spring Boot</strong>, and <strong>Scalable System Design</strong>. Eager to leverage expertise in <strong>RESTful APIs</strong>, <strong>Microservices</strong>, and <strong>SQL</strong> to deliver high-quality, real-world software solutions.</p>
+          </div>
+
+          <div class="cv-section">
+            <h4 class="cv-sec-title"><i data-lucide="graduation-cap"></i> HỌC VẤN (EDUCATION)</h4>
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <strong>Trường Đại học Khoa học Tự nhiên - ĐHQG TP.HCM (VNU-HCM)</strong>
+                <span>Expected July 2027</span>
+              </div>
+              <p>Bachelor of Software Engineering | <strong>Cumulative GPA: 9.0 / 10</strong> (Outstanding Academic Performance)</p>
+              <p>Honors: School Scholarship – Semester 1, Academic Year 2024–2025.</p>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <h4 class="cv-sec-title"><i data-lucide="layers"></i> KỸ NĂNG CHUYÊN MÔN (SKILLS)</h4>
+            <p><strong>Languages:</strong> Java, Kotlin, Python, SQL (Oracle, MySQL), C/C++, TypeScript, JavaScript.</p>
+            <p><strong>Backend:</strong> Spring Boot, Node.js, Microservices Architecture, RESTful APIs, Clean Architecture, Spring Security JWT.</p>
+            <p><strong>Data & Caching:</strong> MySQL, Redis (Distributed Locks), RabbitMQ, BullMQ.</p>
+            <p><strong>DevOps & Tools:</strong> Docker, Kubernetes, Jenkins, CI/CD, ArgoCD, Git, SVN, Postman, Cloudinary.</p>
+            <p><strong>English & Soft Skills:</strong> IELTS 7.0 Academic, Problem Solving, Technical Writing, Teamwork.</p>
+          </div>
+
+          <div class="cv-section">
+            <h4 class="cv-sec-title"><i data-lucide="folder-git-2"></i> DỰ ÁN TIÊU BIỂU (PROJECTS)</h4>
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <strong>Smart Restaurant (Real-time Dine-in QR & KDS)</strong>
+                <span>React, Node.js, Socket.IO, Payments</span>
+              </div>
+              <p>- Hệ thống đặt món tại bàn qua QR, hợp nhất đơn theo phiên bàn, đồng bộ bếp KDS thời gian thực và tích hợp cổng thanh toán.</p>
+            </div>
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <strong>Ticketbox Mocking (Distributed Microservices Platform)</strong>
+                <span>Node.js, TypeScript, Redis Locks, RabbitMQ</span>
+              </div>
+              <p>- Kiến trúc Microservices phân tán, áp dụng Redis distributed locks ngăn ngừa tranh chấp vé/overselling và RabbitMQ xử lý bất đồng bộ.</p>
+            </div>
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <strong>Booking Platform (Hotel Reservation System)</strong>
+                <span>Java Spring Boot, React, MySQL, JWT</span>
+              </div>
+              <p>- Kiến trúc phân tầng Controller-Service-Repository, Spring Security JWT và quản lý tìm kiếm phòng trống theo ngày.</p>
+            </div>
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <strong>DormDeli (Dormitory Food Delivery App)</strong>
+                <span>Kotlin, Jetpack Compose, Student ID Auth</span>
+              </div>
+              <p>- Ứng dụng Android Declarative UI với Jetpack Compose, xác thực sinh viên và module quản lý gian hàng thực phẩm.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-preview-footer">
+          <p class="cv-tip">💡 Liên hệ trực tiếp: lnmnhat1510@gmail.com | +84 336 700 112 | Ho Chi Minh City</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
